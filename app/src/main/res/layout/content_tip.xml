@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main.string.select"
+        android:id="@+id/txtSelect"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/separator2"
+        android:layout_below="@+id/txtSelect"
+        android:layout_alignStart="@id/txtSelect"
+        android:layout_alignEnd="@id/txtSelect"
+        android:layout_alignLeft="@id/txtSelect"
+        android:layout_alignRight="@id/txtSelect" />
+
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main.menu.one"
+        android:layout_below="@id/separator2"
+        android:id="@+id/txtPizza1"/>
+
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPizza1"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:text="@string/main.menu.two"
+        android:id="@+id/txtPizza2"/>
+
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main.menu.three"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/txtPizza2"
+        android:id="@+id/txtPizza3"/>
+
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPizza3"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:text="@string/main.menu.four"
+        android:id="@+id/txtPizza4"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPizza4"
+        android:id="@+id/Linear">
+
+        <EditText
+            android:layout_width="81dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:hint="@string/main.hint.bill"
+            android:enabled="false"
+            android:ems="10"
+            android:id="@+id/inputBill"
+            android:layout_alignParentLeft="true" />
+
+        <EditText
+            android:layout_width="89dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="@string/main.hint.percentage"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:enabled="false"
+            android:ems="10"
+            android:id="@+id/inputPercentage"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main.button.submit"
+            android:id="@+id/btnSubmit"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_below="@id/txtPizza4"
+            android:layout_toRightOf="@+id/inputBill"
+            android:layout_toEndOf="@+id/inputBill" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main.button.clear"
+        android:id="@+id/btnClean"
+        android:layout_below="@+id/Linear"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/separator"
+        android:layout_below="@+id/btnClean"
+        android:layout_alignStart="@id/btnClean"
+        android:layout_alignEnd="@id/txtSelect"
+        android:layout_alignLeft="@id/btnClean"
+        android:layout_alignRight="@id/txtSelect"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/txtTip"
+        android:layout_below="@+id/separator"
+        android:visibility="gone"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/main.personal"
+        android:id="@+id/txtPrecio1"
+        android:layout_alignTop="@+id/txtPizza1"
+        android:layout_alignRight="@+id/Linear"
+        android:layout_alignEnd="@+id/Linear" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/main.metro"
+        android:id="@+id/txtPrecio2"
+        android:layout_alignTop="@+id/txtPizza2"
+        android:layout_alignRight="@+id/Linear"
+        android:layout_alignEnd="@+id/Linear" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/main.supreme"
+        android:id="@+id/txtPrecio3"
+        android:layout_alignTop="@+id/txtPizza3"
+        android:layout_alignRight="@+id/Linear"
+        android:layout_alignEnd="@+id/Linear" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/main.family"
+        android:id="@+id/txtPrecio4"
+        android:layout_alignTop="@+id/txtPizza4"
+        android:layout_alignRight="@+id/Linear"
+        android:layout_alignEnd="@+id/Linear" />
+
+</RelativeLayout>

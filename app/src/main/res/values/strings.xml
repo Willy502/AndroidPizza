@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Android Pizza</string>
+    <string name="main.button.submit">Comprar</string>
+    <string name="main.hint.bill">Precio</string>
+    <string name="main.hint.percentage">12%</string>
+    <string name="main.button.increase">+</string>
+    <string name="main.button.decrease">-</string>
+    <string name="main.button.clear">Borrar Historial</string>
+    <string name="main.notice.clear">Elementos recientes ha quedado vacío</string>
+    <string name="main.menu.action.about">Acerca de</string>
+    <string name="main.name.detail">Detalle de Compra</string>
+
+    <string name="global.message.tip">Impuesto %,.1f</string>
+    <string name="tipdetail.message.bill">Total %,.1f</string>
+    <string name="main.string.history">Historial de Compras</string>
+    <string name="main.string.select">Selecciona tu Menú</string>
+
+    <string name="main.menu.one">Pizza Super Personal</string>
+    <string name="main.menu.two">Pizza Metro</string>
+    <string name="main.menu.three">Pizza Suprema</string>
+    <string name="main.menu.four">Pizza Familiar</string>
+    <string name="main.personal">Q15.00</string>
+    <string name="main.metro">Q150.00</string>
+    <string name="main.supreme">Q200.00</string>
+    <string name="main.family">Q250.00</string>
+    <string name="txtSplash">ANDROID PIZZA!</string>
+
+
+</resources>
